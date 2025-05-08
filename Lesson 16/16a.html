@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moch Keanu Alvino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      height: 3em;
+      background-color: rgb(53, 53, 53);
+      padding: 0 0.5em;
+    }
+
+    .area {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .area button {
+      background-color: gray;
+      border: none;
+      margin: 0 0.3em;
+      border-radius: 10px;
+      width: 2.4em;
+      height: 2em;
+      color: white;
+      cursor: pointer;
+    }
+
+    .tooltip {
+      position: absolute;
+      background-color: black;
+      color: white;
+      font-size: 0.7em;
+      padding: 0.2em 0.5em;
+      border: 1px solid white;
+      border-radius: 4px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+
+    .btn-wrapper {
+      position: relative;
+    }
+
+    .btn-wrapper:hover .tooltip {
+      opacity: 1;
+    }
+
+    .tab {
+      display: flex;
+      align-items: center;
+      background-color: #494949;
+      border-radius: 10px 10px 0 0;
+      padding: 0.3em 0.5em;
+      margin: 0 0.5em;
+      color: white;
+    }
+
+    .tab img {
+      margin-right: 0.5em;
+    }
+
+    .tab a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9em;
+      margin-right: 1em;
+    }
+
+    .tab button {
+      background: none;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="area">
+      <!-- Tombol Search -->
+      <div class="btn-wrapper">
+        <button class="search-btn">v</button>
+        <div class="tooltip" style="top: 2.5em; left: 0;">Search tabs</div>
+      </div>
+
+      <!-- Tab -->
+      <div class="tab">
+        <img src="internet.svg" alt="Internet" width="25">
+        <a href="#">Moch Keanu Alvino</a>
+        <button>x</button>
+      </div>
+
+      <!-- Tombol New Tab -->
+      <div class="btn-wrapper">
+        <button class="new-tab-btn">+</button>
+        <div class="tooltip" style="top: 2.5em; left: -1em;">New tab</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
